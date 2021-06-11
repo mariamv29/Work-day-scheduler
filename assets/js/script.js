@@ -1,12 +1,27 @@
-
-//Display today's date 
-var todayDate = moment().format('dddd, MMM Do YYYY');
+//Display today's date
+var todayDate = moment().format("dddd, MMM Do YYYY");
 $("#currentDate").html(todayDate);
 
-var taskIdCounter =0;
+var timeBlock = parseInt($(this).attr("id"));
 
-//Schedule times 
-var hourEl = 
+function hourExpires() {
+  // create element past, future,
+  var currentHour = moment().hour(); //number
 
+  if ((currentHour = timeBlock)) {
+    $(this).addClass("present");
+    $(this).removeClass("pesent");
+    $(this).removeClass("future");
+  }
+}
+//Adding saveBtn click listener
 
-  
+// $(function () {
+//   $(".saveBtn").on("click", function () {
+//     var input = document.getElementById("textarea" + number).value;
+//     var time = $(this).parent().attr("id");
+
+//     //save task to local storage
+//     localStorage.setItem(time, input);
+//   });
+// });
