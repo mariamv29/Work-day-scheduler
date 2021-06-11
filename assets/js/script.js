@@ -2,16 +2,15 @@
 var todayDate = moment().format("dddd, MMM Do YYYY");
 $("#currentDate").html(todayDate);
 
-var timeBlock = parseInt($(this).attr("id"));
-
+var timeBlock = parseInt($(".time-block").attr("id"));
 function hourExpires() {
   // create element past, future,
   var currentHour = moment().hour(); //number
 
-  if ((currentHour = timeBlock)) {
+  if (currentHour === timeBlock) {
     $(this).addClass("present");
-    $(this).removeClass("pesent");
-    $(this).removeClass("future");
+    //   $(this).removeClass("past");
+    //   $(this).removeClass("future");
   }
 }
 //Adding saveBtn click listener
