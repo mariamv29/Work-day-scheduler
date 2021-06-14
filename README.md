@@ -12,3 +12,4 @@ JavaScript/ JQuery used to complete functionality of color change, save task cre
 4. Data saved to local storage. 
 
 ### Page Screenshot:
+![127 0 0 1_5500_index html](https://user-images.githubusercontent.com/83253575/121848285-73dae300-ccaf-11eb-8e63-3dac643304ef.png)
