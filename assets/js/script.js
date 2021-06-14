@@ -1,6 +1,21 @@
+var tasks = {};
+
 //Display today's date
 var todayDate = moment().format("dddd, MMM Do YYYY");
 $("#currentDate").html(todayDate);
+
+//Adding saveBtn click listener
+$("#time-block .saveBtn").click(function () {
+  //get form values
+  var input = $(".text").val();
+  var time = $("this").closest("div").attr("id");
+  //store
+  localStorage.setItem("input", input);
+});
+
+var loadTasks = function () {
+  tasks = JSON.parse(localStorage.getItem("input", input));
+};
 
 //define DOM elements
 var currentHour = moment().hour(); //number
@@ -8,7 +23,6 @@ console.log(currentHour);
 
 var element = document.getElementById("time-block");
 var number = parseInt(element.getAttribute("data-index"));
-console.log(number);
 
 // for each function to loop / add css class
 function hourExpires() {
@@ -21,19 +35,12 @@ function hourExpires() {
       $(this).removeClass("present");
       $(this).addClass("past");
       $(this).removeClass("future");
+      console.log(currentHour);
+      console.log(number);
     } else $(this).removeClass("present");
     $(this).removeClass("past");
     $(this).addClass("future");
   });
 }
-
-//Adding saveBtn click listener
-$(function () {
-  $(".saveBtn").click(function () {
-    var text = $(this).val();
-    console.log(text);
-  });
-});
-
 
 hourExpires();
