@@ -1,24 +1,52 @@
 # Work-day-scheduler
 
-To Create a work-day schedule, 9-5. Time blocks to reflect past, present and future time based on color code.
-JavaScript/ JQuery used to complete functionality of color change, save task created and stored into local storage.
+## Description 
+Work-Day-Scheduler is an online calendar that allows a user to create and save events for different hours. The app is built with HTML, CSS, JavaScript using jQuery . 
 
-### HTML
 
-1. Timeblock HTML was added.
+### Deployment 
 
-### JS
+[Link](https://mariamv29.github.io/Work-day-scheduler/)
 
-1. Defined variables.
-2. Set current day date.
-3. Loop to fuction and add CSS Class.
-4. Save button function.
-5. Data saved to local storage.
+### Screenshot:
 
-### Page Screenshot:
+![screeshot](./assets/images/workday.jpg)
 
-![127 0 0 1_5500_index html](https://user-images.githubusercontent.com/83253575/121848285-73dae300-ccaf-11eb-8e63-3dac643304ef.png)
 
-### Deployment Link:
+## User Story 
+```md
+AS AN employee with a busy schedule
+I WANT to add important events to a daily planner
+SO THAT I can manage my time effectively
+```
+## Acceptance Criteria 
+```md
+GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner
+THEN the current day is displayed at the top of the calendar
+WHEN I scroll down
+THEN I am presented with time blocks for standard business hours
+WHEN I view the time blocks for that day
+THEN each time block is color-coded to indicate whether it is in the past, present, or future
+WHEN I click into a time block
+THEN I can enter an event
+WHEN I click the save button for that time block
+THEN the text for that event is saved in local storage
+WHEN I refresh the page
+THEN the saved events persist
 
-https://mariamv29.github.io/Work-day-scheduler/
+```
+
+---
+
+🏆 
+## Badges
+
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
+
+
+
+## Contributing / Credits
+
+[mariamv29](https://github.com/mariamv29/README-generator.git)
